@@ -125,7 +125,50 @@
           }
         }
       }
+    },
+    "azure-communication": {
+      "projectType": "library",
+      "root": "projects/azure-communication",
+      "sourceRoot": "projects/azure-communication/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/azure-communication/tsconfig.lib.json",
+            "project": "projects/azure-communication/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/azure-communication/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/azure-communication/src/test.ts",
+            "tsConfig": "projects/azure-communication/tsconfig.spec.json",
+            "karmaConfig": "projects/azure-communication/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/azure-communication/tsconfig.lib.json",
+              "projects/azure-communication/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
-  "defaultProject": "azure-communication-sample"
+  "defaultProject": "azure-communication-sample",
+  "cli": {
+    "analytics": false
+  }
 }
