@@ -1,16 +1,31 @@
 {
   "name": "azure-communication",
   "version": "0.0.1",
+  "author": "Tobias Berei",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tobiasberei/azure-communication.git"
+  },
+  "homepage": "https://github.com/tobiasberei/azure-communication",
+  "keywords": [
+    "angular",
+    "azure",
+    "communication",
+    "service",
+    "azure-communcation",
+    "azure-communication-service"
+  ],
+  "license": "gplv3",
   "peerDependencies": {
     "@angular/common": "^11.0.1",
-    "@angular/core": "^11.0.1"
-  },
-  "dependencies": {
+    "@angular/core": "^11.0.1",
     "@azure/communication-administration": "^1.0.0-beta.3",
     "@azure/communication-calling": "^1.0.0-beta.2",
     "@azure/communication-chat": "^1.0.0-beta.3",
     "@azure/communication-common": "^1.0.0-beta.3",
-    "@azure/communication-signaling": "^1.0.0-beta.1",
+    "@azure/communication-signaling": "^1.0.0-beta.1"
+  },
+  "dependencies": {
     "tslib": "^2.0.0"
   }
 }
